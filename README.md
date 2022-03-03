@@ -10,16 +10,16 @@ Wordle Helper is a tool designed to help you solve your daily Wordle :) Starting
 
 <h2>Commands</h2>
 <h3>no &lt;letter(s)&gt;</h3>
-Indicates the given letter(s) are not in the word. You can include several letters at once. Example: <code>no sle</code>
+Indicates the given letter(s) are not in the word. You can include several letters at once. Example: <code>no abc</code> will eliminate all words that have the letters a, b, and c.
 
 <h3>contains &lt;letter(s)&gt;</h3>
-Indicates the given letter(s) are anywhere in the word. You can include several letters at once. Example: <code>contains sle</code>
+Indicates the given letter(s) are anywhere in the word. You can include several letters at once. Example: <code>contains abc</code> will eliminate all words that don't contain the letters a, b, and c.
 
-<h3>contains &lt;letter(s)&gt; not &lt;first/second/third/fourth/fifth&gt;</h3>
-Indicates the letter is in the word but NOT in the given position. You can only include one letter. Example: <code>contains s not fifth</code></li>
+<h3>contains &lt;letter&gt; not &lt;first/second/third/fourth/fifth&gt;</h3>
+Indicates the letter is in the word but NOT in the given position. You can only include one letter. Example: <code>contains s not fifth</code></li> will filter the word list to only include words with the letter s in the first, second, third, or fourth position.
 
-<h3>&lt;first/second/third/fourth/fifth&gt; &lt;letter(s)&gt;</h3>
-Indicates the letter in in the word at the given position. You can only include one letter. Example: <code>second s</code>
+<h3>&lt;first/second/third/fourth/fifth&gt; &lt;letter&gt;</h3>
+Indicates the letter is in the word at the given position. You can only include one letter. Example: <code>second s</code> will eliminate all words that don't have the letter s in the second position.
 
 <h3>back</h3>
 Undo the last command
